@@ -5,7 +5,7 @@
   "description": "mocha-chai-test to verify charge differential",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha test/chargeDiff.js"
+    "test": "npx mocha test/**.spec.js"
   },
   "repository": {
     "type": "git",
