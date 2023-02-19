@@ -18,38 +18,38 @@ describe("getChargeDifferential", function () {
     let expectedResult = 0;
     assert.equal(getChargeDifferential(charge1, charge2), expectedResult);
   });
-});
 
-it("should return the charge differential for 25 and 30 kWh", function () {
-  const chargeDifferential = getChargeDifferential(25, 30);
+  it("should return the charge differential for 25 and 30 kWh", function () {
+    const chargeDifferential = getChargeDifferential(25, 30);
 
-  expect(chargeDifferential).equal(5);
-});
+    expect(chargeDifferential).equal(5);
+  });
 
-it("should return 0 on same entry", function () {
-  const chargeDifferential = getChargeDifferential(0, 0);
+  it("should return 0 on same entry", function () {
+    const chargeDifferential = getChargeDifferential(0, 0);
 
-  expect(chargeDifferential).equal(0);
-});
+    expect(chargeDifferential).equal(0);
+  });
 
-it("should verify that the charge differential method correctly handles negative values for charges.", function () {
-  const chargeDifferential = getChargeDifferential(-90, -120);
-  expect(chargeDifferential).equal(30);
-});
+  it("should verify that the charge differential method correctly handles negative values for charges.", function () {
+    const chargeDifferential = getChargeDifferential(-90, -120);
+    expect(chargeDifferential).equal(30);
+  });
 
-it("should verify that the charge differential method correctly handles decimal values for charges.", function () {
-  const chargeDifferential = getChargeDifferential(9.89, 89.9);
-  expect(chargeDifferential).equal(80.01);
-});
+  it("should verify that the charge differential method correctly handles decimal values for charges.", function () {
+    const chargeDifferential = getChargeDifferential(9.89, 89.9);
+    expect(chargeDifferential).equal(80.01);
+  });
 
-it("should verify that the charge differential method returns  negative value when one of them is smaller than another one. ", function () {
-  const chargeDifferential = getChargeDifferential(9, 18);
-  expect(chargeDifferential).equal(9);
-});
+  it("should verify that the charge differential method returns  negative value when one of them is smaller than another one. ", function () {
+    const chargeDifferential = getChargeDifferential(9, 18);
+    expect(chargeDifferential).equal(9);
+  });
 
-it("should verify that the charge differential method returns a positive value when one of the charges is greater than another one", function () {
-  const chargeDifferential = getChargeDifferential(18, 9);
-  expect(chargeDifferential).equal(9);
+  it("should verify that the charge differential method returns a positive value when one of the charges is greater than another one", function () {
+    const chargeDifferential = getChargeDifferential(18, 9);
+    expect(chargeDifferential).equal(9);
+  });
 });
 
 describe("getChargeDifferentialWithLocation", () => {
