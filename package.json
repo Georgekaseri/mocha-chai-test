@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "mocha-chai-test",
+  "version": "1.0.0",
+  "description": "mocha-chai-test to verify charge differential",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha test/chargeDiff.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georgekaseri/mocha-chai-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Georgekaseri/mocha-chai-test/issues"
+  },
+  "homepage": "https://github.com/Georgekaseri/mocha-chai-test#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
